@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<!-- Code Syntax Highlighting -->
+
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'/>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushAS3.js' type='text/javascript'/>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js' type='text/javascript'/>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPlain.js' type='text/javascript'/>
+
+
+<link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='Stylesheet' type='text/css'/>
+<link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css' rel='Stylesheet' type='text/css'/>
+
+<script type='text/javascript'>
+     SyntaxHighlighter.config.clipboardSwf = &#39;http://alexgorbatchev.com/pub/sh/current/scripts/clipboard.swf&#39;;
+     SyntaxHighlighter.config.bloggerMode = true;
+     SyntaxHighlighter.all()
+</script>
+
+<!-- Google Analytics -->
+
+<script type='text/javascript'>
+
+  var _gaq = _gaq || [];
+  _gaq.push([&#39;_setAccount&#39;, &#39;UA-23195314-1&#39;]);
+  _gaq.push([&#39;_trackPageview&#39;]);
+
+  (function() {
+    var ga = document.createElement(&#39;script&#39;); ga.type = &#39;text/javascript&#39;; ga.async = true;
+    ga.src = (&#39;https:&#39; == document.location.protocol ? &#39;https://ssl&#39; : &#39;http://www&#39;) + &#39;.google-analytics.com/ga.js&#39;;
+    var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<head>
+<!-- Add Bing -->
+    <meta content='4378FEF75423EA1A171A20098D3502E2' name='msvalidate.01'/>
+    <b:include data='blog' name='all-head-content'/>
+    <title><data:blog.pageTitle/></title>
+    <b:skin><![CDATA[/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Dots
+Date:     24 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+
+/* Variable definitions
+   ====================
+   <Variable name="textcolor" description="Text Color" type="color"
+             default="#333" value="#333333">
+   <Variable name="pagetitle" description="Blog Title Color" type="color"
+             default="#353" value="#335533">
+   <Variable name="blogDescriptionColor" description="Blog Description Color"
+             type="color" default="#996" value="#999966">
+   <Variable name="posttitle" description="Post Title Color" type="color"
+             default="#996" value="#999966">
+   <Variable name="linkcolor" description="Link Color" type="color"
+             default="#488" value="#448888">
+   <Variable name="vlinkcolor" description="Visited Link Color" type="color"
+             default="#885" value="#888855">
+   <Variable name="dateheadercolor" description="Date Header Color"
+             type="color" default="#663" value="#666633">
+   <Variable name="sidebartitle" description="Sidebar Title Color" type="color"
+             default="#663" value="#666633">
+   <Variable name="borderColor" description="Border Color"
+             type="color" default="#9b9" value="#99bb99">
+   <Variable name="bodyfont" description="Text Font" type="font"
+             default="normal normal 100% Verdana,Arial,Sans-Serif" value="normal normal 100% Verdana,Arial,Sans-Serif">
+   <Variable name="pagetitlefont" description="Blog Title Font" type="font"
+             default="normal normal 250% Georgia,Serif" value="normal normal 250% Georgia,Serif">
+   <Variable name="blogDescriptionFont" description="Blog Description Font"
+             type="font" 
+             default="normal normal 100% Verdana, Arial, Sans-Serif" value="normal normal 100% Verdana, Arial, Sans-Serif">
+   <Variable name="dateHeaderFont" description="Date Header Font"
+             type="font" default="normal normal 95% Georgia, Serif" value="normal normal 95% Georgia, Serif">
+   <Variable name="headerfont" description="Sidebar Title Font" type="font"
+             default="normal normal 100% Georgia,Serif" value="normal normal 100% Georgia,Serif">
+   <Variable name="startSide" description="Side where text starts in blog language"
+             type="automatic" default="left" value="left">
+   <Variable name="endSide" description="Side where text ends in blog language" 
+             type="automatic" default="right" value="right">
+*/
+
+body {
+  margin: 0px 0px 0px 0px;
+  background:#fff url("http://www1.blogblog.com/dots/bg_dots.gif");
+  background-position: 50% 31px;
+  text-align:center;
+  font:x-small Verdana, Arial, Sans-serif;
+  color:$textcolor;
+  font-size/* */:/**/small;
+  font-size: /**/small;
+}
+
+
+/* Page Structure
+----------------------------------------------- */
+#outer-wrapper {
+  background:url("http://www.blogblog.com/dots/bg_3dots.gif") no-repeat 250px 50px;
+  width:800px;
+  margin:0 auto;
+  text-align:$startSide;
+  font:$bodyfont;
+  }
+
+#header-wrapper { 
+  display: none;
+ }
+
+#main-wrapper {
+  width:480px;
+  float:$endSide;
+  padding:100px 0 20px;
+  font-size:85%;
+  word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+  overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+  }
+#main {
+  background:url("http://www1.blogblog.com/dots/bg_dots2.gif") -100px -100px;
+  padding:20px 10px 15px;
+  }
+#sidebar-wrapper {
+  width:270px;
+  float:$startSide;
+  font-size:85%;
+  padding-bottom:20px;
+  word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+  overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+  }
+#sidebar {
+  background:url("http://www1.blogblog.com/dots/bg_dots2.gif") 150px -50px;
+  padding:40px 10px 15px;
+  width:250px;
+  }
+
+/*Facebook like button code*/
+.fb-like-button {
+  margin-top:5px;
+  margin-left:3px;
+  overflow:visible;
+}
+
+
+/* Title & Description
+----------------------------------------------- */
+
+.Header h1 {
+  margin:0 0 .5em;
+  line-height: 1.4em;
+  font: $pagetitlefont;
+  color: $pagetitle;
+}
+.Header h1 a {
+  color:$pagetitle;
+  text-decoration:none;
+}
+
+.Header .description {
+  margin:0 0 1.75em;
+  color: $blogDescriptionColor;
+  font: $blogDescriptionFont;
+}
+
+
+/* Links
+----------------------------------------------- */
+a:link {
+  color:$linkcolor;
+  }
+a:visited {
+  color:$vlinkcolor;
+  }
+a:hover {
+  color:$vlinkcolor;
+  }
+a img {
+  border-width:0;
+  }
+
+
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+  margin:0 0 .75em;
+  padding-bottom:.35em;
+  border-bottom:1px dotted $borderColor;
+  text-transform:uppercase;
+  letter-spacing:.3em;
+  color: $dateheadercolor;
+  font: $dateHeaderFont;
+  }
+.post {
+  margin:0 0 2.5em;
+  }
+.post h3 {
+  margin:.25em 0;
+  line-height: 1.4em;
+  font: $headerfont;
+  font-size: 130%;
+  font-weight: bold;
+  color:$posttitle;
+  background:url("http://www1.blogblog.com/dots/bg_post_title_$startSide.gif") no-repeat $startSide .25em;
+  padding:0 0 1px 45px;
+}
+
+.post h3 a {
+  text-decoration:none;
+  color: $posttitle;
+}
+.post h3 a:hover {
+  color: $textcolor;
+}
+
+.post-body {
+  margin:0 0 .75em;
+  line-height:1.6em;
+}
+
+.post-body blockquote {
+  line-height:1.3em;  
+}
+
+.post-footer {
+  margin:0;
+}
+
+.uncustomized-post-template .post-footer {
+  text-align: $endSide;
+}
+
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+  display: block;
+  float: $startSide;
+  margin-$endSide: 4px;
+  text-align: $startSide;
+}
+
+.post-author, .post-timestamp {
+  color:$posttitle;
+}
+
+a.comment-link {
+  /* IE5.0/Win doesn't apply padding to inline elements,
+     so we hide these two declarations from it */
+  background/* */:/**/url("http://www.blogblog.com/dots/icon_comment_$startSide.gif") no-repeat $startSide .25em;
+  padding-$startSide:15px;
+  }
+html>body a.comment-link {
+  /* Respecified, for IE5/Mac's benefit */
+  background:url("http://www.blogblog.com/dots/icon_comment_$startSide.gif") no-repeat $startSide .25em;
+  padding-$startSide:15px;
+  }
+.post img, table.tr-caption-container {
+  margin:0 0 5px 0;
+  padding:4px;
+  border:1px solid $borderColor;
+  }
+.tr-caption-container img {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feed-links {
+  clear: both;
+  line-height: 2.5em;
+}
+
+#blog-pager-newer-link { 
+  float: $startSide;
+ }
+
+#blog-pager-older-link { 
+  float: $endSide;
+ }
+
+#blog-pager {   
+  text-align: center; 
+ }
+
+/* Comments
+----------------------------------------------- */
+#comments {
+  margin:0;
+  }
+#comments h4 {
+  margin:0 0 10px;
+  border-top:1px dotted $borderColor;
+  padding-top:.5em;
+  line-height: 1.4em;
+  font: bold 110% Georgia,Serif;
+  color:#333;
+  }
+#comments-block {
+  line-height:1.6em;
+  }
+.comment-author {
+  background:url("http://www.blogblog.com/dots/icon_comment_$startSide.gif") no-repeat 2px .35em;
+  margin:.5em 0 0;
+  padding-top: 0;
+  padding-bottom:0;
+  padding-$startSide:20px;
+  padding-$endSide:20px;
+  font-weight:bold;
+  }
+.comment-body {
+  margin:0;
+  padding-top: 0;
+  padding-bottom:0;
+  padding-$startSide:20px;
+  padding-$endSide:20px;
+  }
+.comment-body p {
+  margin:0 0 .5em;
+  }
+.comment-footer {
+  margin:0 0 .5em;
+  padding:0 0 .75em 20px;
+  padding-top: 0;
+  padding-bottom:.75em;
+  padding-$startSide:20px;
+  padding-$endSide:0;
+  color:#996;
+  }
+.comment-footer a:link {
+  color:#996;
+  }
+.deleted-comment {
+  font-style:italic;
+  color:gray;
+  }
+
+
+/* More Sidebar Content
+----------------------------------------------- */
+.sidebar h2 {
+  margin:2em 0 .75em;
+  padding-bottom:.35em;
+  border-bottom:1px dotted $borderColor;
+  line-height: 1.4em;
+  font-size: 95%;
+  font: $headerfont;
+  text-transform:uppercase;
+  letter-spacing:.3em;
+  color:$sidebartitle;
+  }
+.sidebar p {
+  margin:0 0 .75em;
+  line-height:1.6em;
+  }
+.sidebar ul {
+  list-style:none;
+  margin:.5em 0;
+  padding:0 0px;
+}
+
+.sidebar .widget { 
+  margin: .5em 0 1em;
+  padding: 0 0px;
+  line-height: 1.5em;
+ }
+
+.main .widget { 
+  padding-bottom: 1em;
+}
+
+.sidebar ul li {
+  background:url("http://www1.blogblog.com/dots/bullet.gif") no-repeat 3px .45em;
+  margin:0;
+  padding-top: 0;
+  padding-bottom:5px;
+  padding-$startSide:15px;
+  padding-$endSide:0;
+}
+.sidebar p {
+  margin:0 0 .6em;
+  }
+
+/* Profile 
+----------------------------------------------- */
+.profile-datablock { 
+  margin: 0 0 1em;
+}
+
+.profile-img { 
+  float: $startSide;
+  margin-top: 0;
+  margin-bottom:5px;
+  margin-$startSide:0;
+  margin-$endSide:8px;
+  border: 4px solid #cc9;
+}
+
+.profile-data { 
+  margin: 0;
+  line-height: 1.5em;
+}
+.profile-textblock { 
+  clear: $startSide;
+  margin-$startSide: 0;
+}
+
+/* Footer
+----------------------------------------------- */
+#footer {
+  clear:both;
+  padding:15px 0 0;
+}
+
+#footer p {
+  margin:0;
+}
+
+/* Page structure tweaks for layout editor wireframe */
+body#layout #sidebar, body#layout #main,
+body#layout #main-wrapper,
+body#layout #outer-wrapper,
+body#layout #sidebar-wrapper { 
+  padding: 0;
+}
+body#layout #sidebar, body#layout #sidebar-wrapper { 
+  padding: 0;
+  width: 240px;
+ }
+]]></b:skin>
+</head>
+
+<body>
+  <b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'>
+<b:widget id='Navbar1' locked='true' title='Панель навигации' type='Navbar'/>
+</b:section>
+
+
+<!-- Yandex.Metrika counter -->
+
+<div style='display:none;'><script type='text/javascript'>
+(function(w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter6644356 = new Ya.Metrika({id:6644356,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        }
+        catch(e) { }
+    });
+})(window, &#39;yandex_metrika_callbacks&#39;);
+</script></div>
+<script defer='defer' src='//mc.yandex.ru/metrika/watch.js' type='text/javascript'/>
+<noscript><div><img alt='' src='//mc.yandex.ru/watch/6644356' style='position:absolute; left:-9999px;'/></div></noscript>
+
+<!-- /Yandex.Metrika counter -->
+
+  <div id='outer-wrapper'><div id='wrap2'>
+
+    <!-- skip links for text browsers -->
+    <span id='skiplinks' style='display:none;'>
+      <a href='#main'>skip to main </a> |
+      <a href='#sidebar'>skip to sidebar</a>
+    </span>
+ 
+    <div id='content-wrapper'>
+
+      <div id='crosscol-wrapper' style='text-align:center'>
+        <b:section class='crosscol' id='crosscol'/>
+      </div>
+
+      <div id='main-wrapper'>
+        <b:section class='main' id='main' showaddelement='no'>
+<b:widget id='Blog1' locked='true' title='Сообщения блога' type='Blog'/>
+<b:widget id='HTML3' locked='false' title='Disqus for Any Key To Create' type='HTML'/>
+</b:section>
+      </div>
+
+      <div id='sidebar-wrapper'>
+        <b:section class='sidebar' id='header' maxwidgets='1'>
+<b:widget id='Header1' locked='true' title='Any Key To Create (заголовок)' type='Header'/>
+</b:section>
+        <b:section class='sidebar' id='sidebar' preferred='yes'>
+<b:widget id='Followers1' locked='false' title='Followers' type='Followers'/>
+<b:widget id='HTML1' locked='false' title='Comments' type='HTML'/>
+<b:widget id='CustomSearch1' locked='false' title='Search' type='CustomSearch'/>
+<b:widget id='Label1' locked='false' title='Labels' type='Label'/>
+<b:widget id='BlogArchive1' locked='false' title='Archive' type='BlogArchive'/>
+<b:widget id='HTML2' locked='false' title='Twitter' type='HTML'/>
+<b:widget id='LinkList1' locked='false' title='Social Nets' type='LinkList'/>
+<b:widget id='Subscribe1' locked='false' title='RSS' type='Subscribe'/>
+<b:widget id='AdSense1' locked='false' title='' type='AdSense'/>
+</b:section>
+      </div>
+
+      <!-- spacer for skins that want sidebar and main to be the same height-->
+      <div class='clear'>&#160;</div>
+
+    </div> <!-- end content-wrapper -->
+
+    <div id='footer-wrapper'>
+      <b:section class='footer' id='footer'/>
+    </div>
+
+  </div></div> <!-- end outer-wrapper -->
+</body>
+</html>
