@@ -1,7 +1,7 @@
 AnyKeyToCreate.blogspot.com
 ===========================
 
-Google Blogger template for dev blog.
+Google Blogger template for dev blog. Here is it http://anykeytocreate.blogspot.com .
 
 ## Extension
 ### Code Syntax Highlighting 
