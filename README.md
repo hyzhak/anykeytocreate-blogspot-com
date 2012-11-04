@@ -9,22 +9,49 @@ of http://alexgorbatchev.com/ for as3 and xml;
 
 ```html
 
-<!-- Code Syntax Highlighting -->
+<!-- Code Syntax Highlighting { -->
 
 <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'/>
-<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushAS3.js' type='text/javascript'/>
-<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js' type='text/javascript'/>
-<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPlain.js' type='text/javascript'/>
-
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js' type='text/javascript'/>
 
 <link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='Stylesheet' type='text/css'/>
-<link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css' rel='Stylesheet' type='text/css'/>
+<link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeRDark.css' rel='Stylesheet' type='text/css'/>
+
+<!-- continue at the and of page-->
+
+<!-- } Code Syntax Highlighting -->
+
+<!-- Code Syntax Highlighting { -->
 
 <script type='text/javascript'>
-     SyntaxHighlighter.config.clipboardSwf = &#39;http://alexgorbatchev.com/pub/sh/current/scripts/clipboard.swf&#39;;
-     SyntaxHighlighter.config.bloggerMode = true;
-     SyntaxHighlighter.all()
+    SyntaxHighlighter.config.clipboardSwf = 'http://alexgorbatchev.com/pub/sh/current/scripts/clipboard.swf';
+    SyntaxHighlighter.config.bloggerMode = true;
+
+    function path(){
+      var args = arguments,
+      result = [];
+      for(var i = 0; i < args.length; i++){
+           result.push(args[i].replace('@', 'http://alexgorbatchev.com/pub/sh/current/scripts/'));
+      }
+      return result;
+    }
+
+    SyntaxHighlighter.autoloader.apply(null, path(
+      'js jscript javascript  @shBrushJScript.js',
+      'actionscript3 as3      @shBrushAS3.js',
+      'xml xhtml xslt html    @shBrushXml.js',
+      'bash shell             @shBrushBash.js',
+      'cpp c                  @shBrushCpp.js',
+      'c# c-sharp csharp      @shBrushCSharp.js',
+      'java                   @shBrushJava.js',
+      'text plain             @shBrushPlain.js',
+      'py python              @shBrushPython.js'
+    ));
+
+    SyntaxHighlighter.all();
 </script>
+
+<!-- } Code Syntax Highlighting -->
 
 ```
 
@@ -36,13 +63,13 @@ of http://alexgorbatchev.com/ for as3 and xml;
 <script type='text/javascript'>
 
   var _gaq = _gaq || [];
-  _gaq.push([&#39;_setAccount&#39;, &#39;UA-23195314-1&#39;]);
-  _gaq.push([&#39;_trackPageview&#39;]);
+  _gaq.push(['_setAccount', 'UA-23195314-1']);
+  _gaq.push(['_trackPageview']);
 
   (function() {
-    var ga = document.createElement(&#39;script&#39;); ga.type = &#39;text/javascript&#39;; ga.async = true;
-    ga.src = (&#39;https:&#39; == document.location.protocol ? &#39;https://ssl&#39; : &#39;http://www&#39;) + &#39;.google-analytics.com/ga.js&#39;;
-    var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(ga, s);
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
 </script>
@@ -70,24 +97,10 @@ of http://alexgorbatchev.com/ for as3 and xml;
         }
         catch(e) { }
     });
-})(window, &#39;yandex_metrika_callbacks&#39;);
+})(window, 'yandex_metrika_callbacks');
 </script></div>
 <script defer='defer' src='//mc.yandex.ru/metrika/watch.js' type='text/javascript'/>
 <noscript><div><img alt='' src='//mc.yandex.ru/watch/6644356' style='position:absolute; left:-9999px;'/></div></noscript>
 
 <!-- /Yandex.Metrika counter -->
-```
-
-### Social
-Facebook and Goolge+
-
-```html
-<!-- new place for FaceBook Button -->
-<br/>
-
-<div id='fb-root'/><script src='http://connect.facebook.net/en_US/all.js#appId=142205515855903&amp;xfbml=1'/><fb:like action='recommend' expr:href='data:post.url' font='' layout='button_count' send='false' show_faces='false' width='156'/>
-
-<!-- Place this tag where you want the +1 button to render -->
-<g:plusone expr:href='data:post.url' size='small'/>
-
 ```
